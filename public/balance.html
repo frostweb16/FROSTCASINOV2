@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance - Luxury Casino</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-gray-800 bg-opacity-90 p-4 shadow-lg z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-yellow-400">Luxury Casino</h1>
+            <div>
+                <a href="index.html" class="mx-4 hover:text-yellow-400">Home</a>
+                <a href="games.html" class="mx-4 hover:text-yellow-400">Games</a>
+                <a href="balance.html" class="mx-4 text-yellow-400">Balance</a>
+                <a href="deposit.html" class="mx-4 hover:text-yellow-400">Deposit</a>
+                <a href="#" onclick="logout()" class="mx-4 hover:text-yellow-400">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Balance Section -->
+    <section class="py-20 bg-gray-800 min-h-screen flex items-center justify-center">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-10">Your Balance</h3>
+            <p class="text-2xl text-yellow-400" id="userBalance">$0.00</p>
+            <p class="text-lg text-gray-300 mt-4">Deposit more to keep playing!</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
