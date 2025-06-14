@@ -1,0 +1,21 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a202c, #2d3748);
+}
+
+nav {
+    backdrop-filter: blur(10px);
+}
+
+canvas {
+    background: #222;
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
